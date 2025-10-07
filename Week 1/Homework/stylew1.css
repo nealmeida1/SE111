@@ -1,0 +1,22 @@
+#header {
+    color: red;
+    border: 5px solid purple;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}  
+.paragraph {
+    color: black;
+    border: 5px solid darkcyan;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-top: 20px;
+}
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
