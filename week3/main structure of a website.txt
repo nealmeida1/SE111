@@ -1,0 +1,7 @@
+main structure of a website 
+a container 
+html tag
+header
+nav bar
+main content 
+footer
