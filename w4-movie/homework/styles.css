@@ -1,0 +1,90 @@
+#container {
+    text-align: center;
+}
+
+#header{
+    color: #000000;
+    font-size: 20px;
+    font-family: "Bitcount Grid Single", system-ui;
+
+  }
+  
+
+#godfather-title{
+    background-color: black;
+    color: rgb(158, 4, 4);
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-size: 40px;
+    letter-spacing: 4px;
+
+}
+
+#nefarious-title{
+    font-family: "Fontdiner Swanky", serif;
+    background-color: black;
+    color: rgb(158, 4, 4);
+    font-size: 35px;
+    letter-spacing: 1px;
+                                                
+}
+
+
+#nav a{
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    animation: glow 2s ease-in-out infinite;
+}
+  
+  @keyframes glow {
+    0%, 100% {
+      text-shadow: 0 0 5px #b60000, 0 0 10px #000000;
+    }
+    50% {
+      text-shadow: 0 0 20px #000000, 0 0 30px #b60000;
+    }
+  }
+
+  body {
+    background: radial-gradient(circle,rgb(131, 76, 76) 0%, gray 100%);
+    height: 105vh;
+  }
+
+#godfatherimg {
+    animation: fadeinout 5s ease-in-out infinite;
+  }
+  
+@keyframes fadeinout {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+#nefariousimage{
+    animation: moveSide 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes moveSide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100px); }
+  }
+
+#content p{
+    font-family: "Arima", system-ui;
+    font-size: 20px;
+}
+
+#content h2:hover{
+    color: red;
+    font-family: "Luckiest Guy", cursive;}
+
+.info{
+    font-size: 32px;
+    animation: colorCycle 4s infinite;
+  }
+  
+  @keyframes colorCycle {
+    0% { color: red; }
+    50% { color: white;}
+    100% { color: black; }
+  }
+
