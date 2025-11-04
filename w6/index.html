@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript <Label></Label></title>
+</head>
+<body>
+    <!--  -->
+    <script>
+        // variable can be anything no space or special characters and has to equal something
+        var test = 10;
+        //redefine you dont have to use var again 
+        test=20;
+        // prints to console
+        console.log(test)
+        console.log(10)
+        console.log("hello")
+        var boolean= true;
+    
+        //conditional operator
+        // <(less than), >(greater than), <=(less than or equal), >=(greater than or equal), ==(equal to), !=(not equal to), ===(the same value and same type)
+        
+        // logical operator
+        // || (or) , && (and)
+
+        // if statment
+        var x = 10;
+        if(x > 20 && x <30){
+            console.log("X has passed conditions")
+        }
+
+        // ++ adds one to variable
+        x++
+
+        // add 5
+        x = x + 5
+        x += 5
+
+        var y = 25
+
+        // adding two variables together
+        x += y
+
+        
+        // its not going to add a boolean to a number
+        var boolThing = true
+        console.log(x += boolThing)
+
+        // multiply *
+
+        x = x * 2
+
+        // this is the shorthand tool only used for two objects dont use with long equations
+        x *= 2 
+
+
+        // making a function
+
+        function doSomething()
+        {
+            console.log('Hello i am a function')
+
+        }
+
+        // calling the functions
+        doSomething();
+
+        // parameters in a fuction
+
+        function add(numOne,numTwo)
+        {
+            
+            // console.log(numOne + numTwo)
+            // passing data back
+            return numOne + numTwo
+
+        }
+
+        // add(20,55);
+
+        // passing data back
+        console.log(add(20,55))
+
+        // alert screen
+
+        alert(add(632823,23782389))
+
+        var name = prompt("what is your name?")
+        alert(name + "youre not in class")
+
+        // if you want to quote something
+        var um = '"i quoted this"'
+
+        // sting
+        var wayone= "hi"
+        var way2 = "hi"
+
+        // string concatention
+
+        var addedStrings = "string1" + "sting2"
+
+        // you can add almost anything to strings
+        var name ="ben"
+        var num = 10
+
+        console.log(name+num)
+        console.log(name+true)
+
+        var numberString = "32747490235092"
+        // javascript allows us to convert things to other types
+        var conversion = Number(numberString)
+        console.log(conversion)
+        var backConversion = String(conversion)
+
+        // check what type something is 
+        if(typeof conversion === 'sting')
+        {
+            console.log(true)
+        }
+
+        // 
+        console.log("My favorite show is" + name + num)
+        // string literal use backtics it is where the tilde is
+        
+        var tvShow = `Hi I really like ${name} ${num}`;
+        console.log(tvShow)
+
+    </script>
+</body>
+</html>

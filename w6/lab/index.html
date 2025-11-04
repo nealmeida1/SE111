@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        function calculator(){
+            var question = prompt("Would you like to add or multiply enter add or multiply")
+
+            if (question=="add") {
+                var num1 = prompt("enter first number")
+                var num2 = prompt('enter number two')
+                var conversion = Number(num1)
+                var conversion1 = Number(num2)
+                var answer = (conversion+conversion1)
+                console.log(answer)
+
+                
+            } 
+            else { 
+                var num1 = prompt('enter first number')
+                var num2 = prompt('enter second number')
+                var conversion = Number(num1)
+                var conversion1 = Number(num2)
+                var answer = (conversion*conversion1)
+                console.log(answer)
+                
+            }
+        }
+            calculator()
+    </script>
+</body>
+</html>
