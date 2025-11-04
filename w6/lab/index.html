@@ -13,24 +13,32 @@
             if (question=="add") {
                 var num1 = prompt("enter first number")
                 var num2 = prompt('enter number two')
-                var conversion = Number(num1)
-                var conversion1 = Number(num2)
-                var answer = (conversion+conversion1)
-                console.log(answer)
+                console.log(add(num1,num2))
+
 
                 
             } 
             else { 
                 var num1 = prompt('enter first number')
                 var num2 = prompt('enter second number')
-                var conversion = Number(num1)
-                var conversion1 = Number(num2)
-                var answer = (conversion*conversion1)
-                console.log(answer)
-                
+                console.log(mult(num1,num2))
+
             }
         }
+        function add(num1,num2){
+            var conversion = Number(num1)
+            var conversion1 = Number(num2)
+            var answer = (conversion+conversion1) 
+            return answer
+        }
+        function mult(num1,num2){
+            var conversion = Number(num1)
+                var conversion1 = Number(num2)
+                var answer = (conversion*conversion1)
+                return answer
+        }
             calculator()
+
     </script>
 </body>
 </html>
