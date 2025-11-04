@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Forms | Week 5</title>
+    
+    <style>
+
+        table,tr,th,td{
+            border: 1px solid black;
+        }
+
+        tr:nth-child(even){
+            background-color: aquamarine;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Week 5 Tables and Forms</h1>
+
+    <h2> Table Example</h2>
+<!-- start a table -->
+    <table>
+        <!-- Head of table -->
+        <thead>
+            <!-- Table Row -->
+            <tr>
+                <!-- table data -->
+                <td>First Name</td>
+                <!-- table header -->
+                <th>Last Name</th>
+                <td>Role</td>
+            </tr>
+        </thead>
+
+        <!-- Body of Table -->
+        <tbody>
+
+            <tr>
+                <td>Nick</td>
+                <td>Almeida</td>
+                <td>Student</td>
+            </tr>
+            <tr>
+                <td>Shelby</td>
+                <td>Almeida</td>
+                <td>Teacher</td>
+            </tr>
+            <tr>
+                <td>Kat</td>
+                <td>Dias</td>
+                <td>Barber</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <h2> Basic Form Example</h2>
+    <form action="#" method="post"></form>
+<!-- label for username box -->
+    <label for="Username">Username:</label>
+    <br>
+<!-- the input, text has a special attribute -->
+<!-- this allows use to have a default value -->
+    <input type="text" name="Username" placeholder="Enter Username">
+    <br>
+
+    <label for="Password">Password:</label>
+    <br>
+
+    <input type="text" name="Password" placeholder="Enter Password">
+    <br>
+
+
+    <form action="#" method="get">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Label</th>
+                    <th>Head</th>
+                </tr>
+            </thead>
+        
+<!-- the body -->
+            <tbody>
+                <!-- Label -->
+                <tr>
+                    <!-- Input -->
+                    <td>Text Input</td>
+                    <td><input type="text" name="text-input" required></td>
+                </tr>
+                <tr>
+                    <!-- Input -->
+                    <td>Text Input</td>
+                    <td><input type="color" name="color-input" required></td>
+                </tr>
+                <tr>
+                    <!-- Input -->
+                    <td>Text Input</td>
+                    <td><input type="date" name="date-input" required></td>
+                </tr>
+                <tr>
+                    <!-- Input -->
+                    <td>Text Input</td>
+                    <td><input type="file" name="file" required></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
