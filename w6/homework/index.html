@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 | Calculator</title>
+</head>
+<body>
+    <script>
+
+        function pay(){
+            var question = prompt("What is your hourly pay?")
+            var question2= prompt("How many hours a week do you work?")
+            var conversion= Number(question)
+            var conversion1= Number(question2)
+            var times2= (question2 * 2)
+            var totalTax= .20
+            var totalAmount= (conversion * times2)
+            var uncleSam= (conversion * times2 *totalTax)
+            var netPay = (totalAmount-uncleSam)
+        
+            return {totalAmount,uncleSam,netPay}
+        }
+
+            var func = pay()
+            let formatted = (Math.trunc(func.totalAmount * 100 ) / 100).toFixed(2);
+            let formatted1 = (Math.trunc(func.uncleSam * 100 ) / 100).toFixed(2);
+            let formatted2 = (Math.trunc(func.netPay * 100 ) / 100).toFixed(2);
+
+            alert(`Gross Pay: $${formatted}`+ "\n" + `Uncle Sams Share: $${formatted1}` + "\n" + `Net Pay: $${formatted2}`)
+
+            console.log(`Gross Pay: $${formatted}`)
+            console.log(`Uncle Sams Share: $${formatted1}`)
+            console.log(`Net Pay: $${formatted2}`)
+
+            document.write(`<b>Gross Pay:</b> $${formatted}` + "<br><br>")
+            document.write(`<b>Uncle Sams Share:</b> $${formatted1}`+ "<br><br>")
+            document.write(`<b>Net Pay:</b> $${formatted2}`+ "<br><br>")
+    </script>
+
+</body>
+</html>
