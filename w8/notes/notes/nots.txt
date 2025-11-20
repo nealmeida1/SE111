@@ -1,0 +1,98 @@
+JavaScript notes
+
+oop- object oriented programming 
+	allows us to make data less abstract
+	data is contained 
+
+almost everything is an object
+functions is not an object 
+
+key value pair:
+
+var person 
+{
+firstName : "nick",
+lastName : "almeida",
+}
+
+classes are a blueprint 
+
+console.log(person.firstName)   prints only first name to log 
+
+. = dot syntax it shows ownership
+
+
+function test(paramOne)
+{
+console.log(paramOne)
+}
+test(person)
+
+Array: 
+List of data 
+holds memory 
+addresses to objects and where they are stored 
+
+example:
+var test["testOne", "testTwo"] ;
+
+
+arrays should be only ONE data type 
+
+an array inside an array is a 2d array 
+
+var fruits=
+[
+"bananas",  
+"apple",
+"orange",
+"pomegranate",
+"tomato"
+]
+
+list starts at position 0
+
+if i wanted to access bananas out of array:
+fruits[0]
+
+2D array 
+var test
+[["test1","test2"],["t3","t4"]]
+
+if i wants to pull it out 
+test[0][1] would be test two 
+
+for loop:
+
+3 parts- variable declaration, condition, incremental 
+
+for (let i=0; i<10; i++)
+{
+console.log(i)
+}
+
+
+example of for loops with array 
+
+var fruits 
+[
+"bananas"
+"tomato"
+"Apple"
+"Berries"
+]
+
+for(let i=0; i<4 i++)
+{
+console.log(fruits[i})
+}
+
+
+example for unlimited length:
+
+for(let i=0; i<fruits.length; i++)
+{
+console.log(fruits[i])
+}
+
+
